@@ -3,7 +3,6 @@ const axios = require('axios');
 const url = 'https://rickandmortyapi.com/api'
 
 
-
 export async function getEpisodeById(id) {
   try {
     const response = await axios.get(url + `/episode/${id}`);
@@ -13,17 +12,6 @@ export async function getEpisodeById(id) {
     console.error(error);
   }
 }
-
-export async function getCharacter(urlCharacter) {
-  try {
-    const response = await axios.get(urlCharacter);
-    return response;
-    
-  } catch (error) {
-    console.error(error);
-  }
-}
-
 
 
 export async function getListAllEpisodes() {
