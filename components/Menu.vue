@@ -7,6 +7,12 @@
       fixed
       app
     >
+
+    <div class="menu-logo center">
+      <img class="menu-logo image" src="../static/img-menu.png">
+      <hr>
+    </div>
+
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -50,9 +56,8 @@ name: 'DefaultLayout',
       fixed: false,
 
       items: [
-        { icon: 'mdi-chart-bubble', title: 'list of episodes', to: '/list-episodes' },
-        { icon: 'mdi-chart-bubble', title: 'alive dashboard', to: '/dashboard' },
-        { icon: 'mdi-chart-bubble', title: 'tree view', to: '/tree-view' }
+        { icon: 'mdi-chart-bubble', title: 'List of episodes', to: '/list-episodes' },
+        { icon: 'mdi-chart-bubble', title: 'Dashboard', to: '/dashboard' },
 
       ],
       
@@ -66,5 +71,13 @@ name: 'DefaultLayout',
 </script>
 
 <style>
-
+  .center{
+    text-align: center;
+  }
+  .menu-logo{
+    margin: 5px 0px;
+  }
+  .menu-logo .image{
+    width:50px;
+  }
 </style>

@@ -1,16 +1,26 @@
 <template>
   <div>
-    <h1>Live Dashboard</h1>
-    
+    <h1> Types of Charts  to Episodes/Season</h1>
+    <div class="container dashboard" >
+        <ChartBar />
+        <ChartPie />
+        <ChartLine />
+        <ChartDoughnut />    
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
+<style >
+  .container .dashboard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .single-chart {
+    background-color: rgb(255, 254, 254);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 450px;
+    height: auto;
+  }
 </style>

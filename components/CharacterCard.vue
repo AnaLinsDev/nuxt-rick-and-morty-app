@@ -65,12 +65,6 @@ export default {
         }
       },
 
-      metaInfo () {
-          return {
-            url : this.url
-            }
-          }
-
 }
 </script>
 
