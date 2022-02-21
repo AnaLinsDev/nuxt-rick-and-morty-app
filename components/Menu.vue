@@ -58,6 +58,7 @@ name: 'DefaultLayout',
       items: [
         { icon: 'mdi-chart-bubble', title: 'List of episodes', to: '/list-episodes' },
         { icon: 'mdi-chart-bubble', title: 'Dashboard', to: '/dashboard' },
+        { icon: 'mdi-chart-bubble', title: 'Todo App', to: '/TodoApp' },
 
       ],
       

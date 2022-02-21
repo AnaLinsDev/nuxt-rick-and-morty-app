@@ -1,0 +1,19 @@
+ Exemplos de lyfecicle hooks:
+
+ Se não houver casos assincronos, então: 
+ beforeCreate -> 1º
+ created      -> 2º
+ beforeMount  -> 3º
+ mounted      -> 4º
+
+Agora já temos a tela no browser e algo muda:
+ beforeUpdate -> 1º
+ updated -> 1º
+
+Então fechamos a aplicação: 
+ beforeUnmount -> 1º
+ unmounted -> 2º
+
+ Outros casos:
+ errorCaptured -> quando um erro acontece
+
