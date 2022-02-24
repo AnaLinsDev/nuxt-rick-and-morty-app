@@ -10,8 +10,8 @@
 
 <script>
 
-import BarChart from './charts-shape/ChartBar.vue'
-import {getListAllEpisodes} from '../repository/apiRequests'
+import BarChart from '../charts-shape/ChartBar.vue'
+import {getListAllEpisodes} from '../../repository/apiRequests'
 
 export default {
   name: 'BarChartContainer',

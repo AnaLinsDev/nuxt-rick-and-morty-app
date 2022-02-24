@@ -8,8 +8,7 @@
       :class="[todo.completed ? 'done' : 'todo']"
     >
       <p>   
-        {{ todo.text }}
-        (( {{ todo.id }} ))
+        {{ todo.text }} - {{ todo.id }} 
       </p> 
 
       <input
@@ -22,7 +21,11 @@
     </div>
 
     <form data-test="form" @submit.prevent="createTodo" class="form">
-      <input data-test="new-todo" v-model="newTodo" placeholder="New Todo" class="form-input"/>
+      <input 
+        data-test="new-todo" 
+        v-model="newTodo" 
+        placeholder="New Todo" 
+        class="form-input"/>
     </form>
 
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="single-chart episode-per-season" >
-    <doughnut-chart
+    <line-chart
       v-if="loaded"
       :chartdata="chartdata"
       :options="options"
@@ -10,13 +10,13 @@
 
 <script>
 
-import DoughnutChart from './charts-shape/ChartDoughnut.vue'
-import {getListAllEpisodes} from '../repository/apiRequests'
+import LineChart from '../charts-shape/ChartLine.vue'
+import {getListAllEpisodes} from '../../repository/apiRequests'
 
 export default {
-  name: 'DoughnutChartContainer',
+  name: 'LineChartContainer',
 
-  components: { DoughnutChart },
+  components: { LineChart },
   data: () => ({
     loaded: false,
     chartdata: null,
@@ -24,13 +24,6 @@ export default {
 
     labels: ['S01', 'S02', 'S03', 'S04', 'S05'],
     data: [0, 0, 0, 0, 0],
-    backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)',
-      'rgb(154, 22, 235)',
-      'rgb(025, 205, 86)'
-    ],
 
   }),
 
@@ -58,7 +51,8 @@ export default {
           label: 'Episodes / Season',
           backgroundColor: '#f87979',
           data: this.data,
-          backgroundColor: this.backgroundColor 
+          borderColor: 'rgb(0, 0, 0)',
+          fill: false,
         }
       ]
     }

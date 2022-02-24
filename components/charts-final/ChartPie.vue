@@ -10,8 +10,8 @@
 
 <script>
 
-import PieChart from './charts-shape/ChartPie.vue'
-import {getListAllEpisodes} from '../repository/apiRequests'
+import PieChart from '../charts-shape/ChartPie.vue'
+import {getListAllEpisodes} from '../../repository/apiRequests'
 
 export default {
   name: 'PieChartContainer',

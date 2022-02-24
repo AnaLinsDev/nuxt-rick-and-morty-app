@@ -7,28 +7,29 @@
       fixed
       app
     >
+     <div v-once>
+        <div class="menu-logo center">
+          <img class="menu-logo image" width="50px" src="../static/img-menu.png">
+          <hr>
+        </div>
 
-    <div class="menu-logo center">
-      <img class="menu-logo image" src="../static/img-menu.png">
-      <hr>
-    </div>
-
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+          <v-list>
+            <v-list-item
+              v-for="(item, i) in items"
+              :key="i"
+              :to="item.to"
+              router
+              exact
+            >
+              <v-list-item-action>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="item.title" />
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+      </div>
     </v-navigation-drawer>
 
 
@@ -59,7 +60,8 @@ name: 'DefaultLayout',
         { icon: 'mdi-chart-bubble', title: 'List of episodes', to: '/list-episodes' },
         { icon: 'mdi-chart-bubble', title: 'Dashboard', to: '/dashboard' },
         { icon: 'mdi-chart-bubble', title: 'Todo App', to: '/TodoApp' },
-
+        { icon: 'mdi-chart-bubble', title: 'Edit Image', to: '/edit-image' },
+        { icon: 'mdi-chart-bubble', title: 'Forms Event', to: '/forms-event' },
       ],
       
       miniVariant: false,
@@ -78,7 +80,5 @@ name: 'DefaultLayout',
   .menu-logo{
     margin: 5px 0px;
   }
-  .menu-logo .image{
-    width:50px;
-  }
+
 </style>
