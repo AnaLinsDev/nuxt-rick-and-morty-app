@@ -3,7 +3,7 @@ $ yarn <br>
 $ yarn dev
 
 # Motivação
-## Projeto feito para aprender  NuxtJs e Vuetify, foi feito usando Axios para acessar a API externa da série Rick and Morty: https://rickandmortyapi.com/
+## Projeto feito para aprender  NuxtJs, Jest e Vuetify, foi feito usando Axios para acessar a API externa da série Rick and Morty: https://rickandmortyapi.com/
 
 # Algumas imagens: 
 
